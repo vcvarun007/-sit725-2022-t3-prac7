@@ -1,3 +1,3 @@
-# sit725-2022-t3-prac5
+# sit725-2022-t3-prac6
 
-Practical 5
+Practical 6
