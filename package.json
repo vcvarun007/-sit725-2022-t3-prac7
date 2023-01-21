@@ -1,6 +1,6 @@
 {
-  "name": "sit725-2022-t3-prac6",
-  "description": "Practical 6",
+  "name": "sit725-2022-t3-prac7",
+  "description": "Practical 7",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -17,17 +17,18 @@
     "materialize-css": "^1.0.0-rc.2",
     "mocha": "^10.2.0",
     "mongodb": "^4.12.1",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "socket.io": "^4.5.4"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vcvarun007/sit725-2022-t3-prac6.git"
+    "url": "git+https://github.com/vcvarun007/sit725-2022-t3-prac7.git"
   },
   "keywords": [
     "prac4"
   ],
   "bugs": {
-    "url": "https://github.com/vcvarun007/sit725-2022-t3-prac6/issues"
+    "url": "https://github.com/vcvarun007/sit725-2022-t3-prac7/issues"
   },
-  "homepage": "https://github.com/vcvarun007/sit725-2022-t3-prac6#readme"
+  "homepage": "https://github.com/vcvarun007/sit725-2022-t3-prac7#readme"
 }

@@ -5,6 +5,9 @@ const cors = require("cors");
 let projectCollection;
 let dbConnect = require("./dbConnect");
 let projectRoutes = require("../../routes/projectRoutes");
+let http = require("http").createServer(app);
+let io = require("socket.io")(http);
+let socketPort = 8080;
 
 app.use(express.static("public"));
 app.use(express.json());
@@ -43,7 +46,23 @@ app.get("/addTwoNumbers/:firstNumber/:secondNumber", (req, res, next) => {
 //   });
 // };
 
+io.on("connection", (socket) => {
+  console.log("a user connected");
+  socket.on("disconnect", () => {
+    console.log("user disconnected");
+  });
+  setInterval(() => {
+    socket.emit("number", parseInt(Math.random() * 10));
+  }, 1000);
+});
+
+/*
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
   // createColllection("RandomTestCollection");
+});
+*/
+
+http.listen(socketPort, () => {
+  console.log(`Listening on socketPort ${socketPort}`);
 });
